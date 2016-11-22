@@ -35,6 +35,42 @@ function createGrid(x) {
     $(".grid").height(720/x);
 };
 
+function black() {
+  $('.grid').hover (
+  function(){ $(this).addClass("black")}
+  );
+};
+
+function randomColor(){
+  $('.grid').hover (
+    function(){ $(this).addClass(getRandomClass())}
+    )
+}
+
+function getRandomClass (){
+  var classes = new Array("red", "blue", "yellow", "green", "orange", "violet");
+  var randomNumber = Math.floor(Math.random() * 7);
+  return classes[randomNumber];
+};
+
+
 $(document).ready(function() {
     createGrid(16);
+    black();
+    $(".reset").click(function (){
+      $("#container").html("");
+      var input = prompt('How big do you want the grid?');
+      createGrid(parseInt(input));
+      black();
+    });
+
+    $(".random").click(function (){
+      $("#container").html("");
+      var input = prompt('How big do you want the grid');
+      createGrid(parseInt(input));
+      randomColor();
+    });
+
+
+
 });

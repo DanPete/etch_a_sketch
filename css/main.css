@@ -112,17 +112,60 @@ textarea {
     /*background-color: blue;*/
     margin-top: 0;
     padding: 0;
-    outline: 1px solid grey;
+    outline: 1px solid rgba(211,211,211, 0.4);
     display: inline-block;
     /*width: 45px;*/
     /*height:45px;*/
 }
 
+.buttons {
+    font-size: 20px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    bottom: 10px;
+}
 
+.title {
+    margin: 10 auto;
+    position: relative;
+    display: block;
+}
 
+.black {
+    background-color: black;
+    outline: none;
+}
 
+.red {
+    background-color: #FF4136;
+    outline: none;
+}
 
+.blue {
+    background-color: #0074D9;
+    outline: none;
+}
 
+.yellow {
+    background-color: #FFDC00;
+    outline: none;
+}
+
+.green {
+    background-color: #2ECC40;
+    outline: none;
+}
+
+.orange {
+    background-color: #FF851B;
+    outline: none;
+}
+
+.violet {
+    background-color: #F012BE;
+    outline: none;
+}
 
 
 
