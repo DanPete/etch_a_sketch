@@ -109,7 +109,7 @@ textarea {
 }
 
 .grid {
-    /*background-color: blue;*/
+    background-color: rgba(0,0,0, 0.0);
     margin-top: 0;
     padding: 0;
     outline: 1px solid rgba(211,211,211, 0.4);
