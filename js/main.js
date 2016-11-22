@@ -1,30 +1,3 @@
-/*
-$(document).ready(function() {
-    for(var x = 0; x < 16; x++) {
-        for(var y = 0; y < 16; y++) {
-            var unit = $("<div class='unit'></div>");
-            unit.appendTo('#container');
-        }
-    }
-});
-*/
-/*
-$(document).ready(function createGrid(x) {
-  for (var rows = 0; rows < x; rows++) {
-    for (var columns = 0; columns < x; columns++) {
-      $("#container").append("<div class='grid'></div>")
-    };
-  };
-  $(".grid").width(960/x);
-  $(".grid").height(960/x);
-};
-});
-
-$(document).ready(function() {
-    createGrid(16);
-});
-*/
-
 function createGrid(size) {
   for (var rows = 0; rows < size; rows++) {
     for (var columns = 0; columns < size; columns++) {
@@ -88,14 +61,6 @@ $(document).ready(function() {
     black ();
   });
 
-/*
-      var input = prompt("How big do you want the grid? (1-100)", "16");
-      createGrid(parseInt(input));
-      black();
-    });
-*/
-
-
     $(".classic").click(function (){
       $("#container").empty();
       createGrid(size);
@@ -123,24 +88,4 @@ $(document).ready(function() {
       shadeGrey();
     });
 
-
-
 });
-
-
-/*
-
-    $(".resize").click(function (){
-      haveSize = false;
-      while (haveSize === false){
-        oldSize = size;
-        size = prompt("How big do you want the grid? (1-100)", "16");
-        if (size > 0 && <=128){haveSize = true}
-        else if(size === null){
-          size = oldSize;
-          haveSize = true }
-        else {alert("The grid is too large!")};
-        };
-      });
-
-      */
