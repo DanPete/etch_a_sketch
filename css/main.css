@@ -219,6 +219,29 @@ button:active {
     outline: none;
 }
 
+footer {
+    padding-top: 10px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size: 17px;
+}
+
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: firebrick;
+}
+
+a:link {
+    color:  #DC143C;
+}
+
 
 @keyframes neon1 {
   from {
